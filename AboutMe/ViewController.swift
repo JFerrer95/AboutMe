@@ -16,7 +16,6 @@ class ViewController: UIViewController {
         nameLabel.text = nil
         hobbiesLabel.text = nil
        
-        
     }
 
     
@@ -30,4 +29,3 @@ class ViewController: UIViewController {
     @IBOutlet weak var hobbiesLabel: UILabel!
     
 }
-
