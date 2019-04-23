@@ -42,20 +42,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytE-ON-kPi">
+                                <rect key="frame" x="105.5" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-66-Ghb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cvc-3D-RyG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="15R-j6-4co"/>
                             <constraint firstItem="cvc-3D-RyG" firstAttribute="baseline" secondItem="lbq-XI-3SX" secondAttribute="baseline" id="8Oc-4K-J7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ytE-ON-kPi" secondAttribute="bottom" id="BiO-Sk-Y18"/>
                             <constraint firstItem="nLn-Jo-oCz" firstAttribute="top" secondItem="cvc-3D-RyG" secondAttribute="bottom" constant="9" id="DXU-bz-3Lc"/>
                             <constraint firstItem="ryQ-L4-pJb" firstAttribute="leading" secondItem="nLn-Jo-oCz" secondAttribute="trailing" constant="8" symbolic="YES" id="MqD-iw-F7l"/>
                             <constraint firstItem="cvc-3D-RyG" firstAttribute="leading" secondItem="nLn-Jo-oCz" secondAttribute="leading" id="dpJ-sV-x7m"/>
+                            <constraint firstItem="ytE-ON-kPi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="liv-dJ-Re0"/>
                             <constraint firstItem="cvc-3D-RyG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tpP-Ow-6Xq"/>
                             <constraint firstItem="nLn-Jo-oCz" firstAttribute="baseline" secondItem="ryQ-L4-pJb" secondAttribute="baseline" id="vK9-IG-QwV"/>
                             <constraint firstItem="lbq-XI-3SX" firstAttribute="leading" secondItem="cvc-3D-RyG" secondAttribute="trailing" constant="8" symbolic="YES" id="y6v-bg-teF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="ryQ-L4-pJb" id="Iab-ah-GFk"/>
+                        <outlet property="nameLabel" destination="lbq-XI-3SX" id="rAZ-PU-xXp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
