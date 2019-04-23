@@ -12,12 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-//        print("My name is Jonathan Ferrer")
+        nameLabel.text = nil
+        hobbiesLabel.text = nil
+       
         
     }
 
+    
     @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
         
         nameLabel.text = "Jonathan Ferrer"
